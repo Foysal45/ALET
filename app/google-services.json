@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "502621160808",
+    "project_id": "alet-simec",
+    "storage_bucket": "alet-simec.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:502621160808:android:2b3466a05df0b41bcb82dd",
+        "android_client_info": {
+          "package_name": "com.alet.apps"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "502621160808-621ha33ckbs4vvired8at5ijrvo0idpn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.alet.apps",
+            "certificate_hash": "29a50f2d6388f28f723696aa48440baa762f599c"
+          }
+        },
+        {
+          "client_id": "502621160808-qcn7cr09k1ki5bn5vnugkf7la6al12gf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPq3C5-6_lOotdY6skAE8lyKRK9DUItfw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "502621160808-qcn7cr09k1ki5bn5vnugkf7la6al12gf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
