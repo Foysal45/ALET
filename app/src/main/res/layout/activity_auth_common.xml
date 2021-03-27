@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,21 +8,61 @@
     tools:context=".c_activity.ac_auth.view.AuthCommonActivity">
 
     <ImageView
+        android:id="@+id/logo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="@dimen/_36sdp"
+        android:layout_marginBottom="@dimen/_36sdp"
         android:adjustViewBounds="true"
         android:src="@drawable/logo" />
+
 
     <FrameLayout
         android:id="@+id/container_auth"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_below="@id/logo"
         android:layout_margin="@dimen/_16sdp"
-        android:background="@drawable/shape_rec_solid_white_30dp"
+        android:background="@drawable/shape_rec_solid_white_4dp"
         android:elevation="1dp"
         android:orientation="vertical"
         android:translationZ="1dp" />
 
-</LinearLayout>
+    <LinearLayout
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:orientation="horizontal"
+        android:translationZ="@dimen/_2sdp">
+
+        <TextView
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_margin="@dimen/_4sdp"
+            android:background="@drawable/shape_rec_solid_orange_30dp"
+            android:elevation="@dimen/_1sdp"
+            android:gravity="center"
+            android:text="Sign In"
+            android:textAlignment="center"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="bold"
+            android:translationZ="@dimen/_1sdp" />
+
+        <TextView
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_margin="@dimen/_4sdp"
+            android:background="@drawable/shape_rec_solid_white_30dp"
+            android:elevation="@dimen/_1sdp"
+            android:gravity="center"
+            android:text="Sign Up"
+            android:textAlignment="center"
+            android:textColor="@color/colorGray"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="bold"
+            android:translationZ="@dimen/_1sdp" />
+    </LinearLayout>
+</RelativeLayout>
