@@ -26,24 +26,7 @@
         android:background="@drawable/shape_rec_solid_white_4dp"
         android:elevation="@dimen/_1sdp"
         android:gravity="center_vertical"
-        android:hint="phone or email"
-        android:padding="@dimen/_8sdp"
-        android:textColor="@color/colorBlack"
-        android:textColorHint="@color/colorDarkGray"
-        android:textSize="@dimen/_12sdp"
-        android:translationZ="@dimen/_1sdp" />
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/_16sdp"
-        android:layout_marginTop="@dimen/_8sdp"
-        android:layout_marginRight="@dimen/_16sdp"
-        android:layout_marginBottom="@dimen/_8sdp"
-        android:background="@drawable/shape_rec_solid_white_4dp"
-        android:elevation="@dimen/_1sdp"
-        android:gravity="center_vertical"
-        android:hint="password"
+        android:hint="Phone Or Email"
         android:maxLines="1"
         android:padding="@dimen/_8sdp"
         android:singleLine="true"
@@ -51,6 +34,45 @@
         android:textColorHint="@color/colorDarkGray"
         android:textSize="@dimen/_12sdp"
         android:translationZ="@dimen/_1sdp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginRight="@dimen/_16sdp"
+            android:layout_marginBottom="@dimen/_8sdp"
+            android:background="@drawable/shape_rec_solid_white_4dp"
+            android:elevation="@dimen/_1sdp"
+            android:gravity="center_vertical"
+            android:hint="Password"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/_8sdp"
+            android:paddingTop="@dimen/_8sdp"
+            android:paddingRight="@dimen/_32sdp"
+            android:paddingBottom="@dimen/_8sdp"
+            android:singleLine="true"
+            android:textColor="@color/colorBlack"
+            android:textColorHint="@color/colorDarkGray"
+            android:textSize="@dimen/_12sdp"
+            android:translationZ="@dimen/_1sdp" />
+
+        <ImageView
+            android:id="@+id/password_show_hide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/_24sdp"
+            android:src="@drawable/ic_baseline_visibility_24"
+            android:translationZ="@dimen/_2sdp" />
+    </RelativeLayout>
+
 
     <TextView
         android:layout_width="wrap_content"
@@ -67,24 +89,25 @@
         android:layout_height="@dimen/_30sdp"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="@dimen/_32sdp"
+        android:layout_marginBottom="@dimen/_8sdp"
         android:background="@drawable/shape_rec_solid_black_30dp"
         android:drawableRight="@drawable/ic_signin"
-        android:gravity="center"
         android:elevation="@dimen/_1sdp"
-        android:translationZ="@dimen/_1sdp"
-        android:layout_marginBottom="@dimen/_8sdp"
+        android:gravity="center"
         android:paddingLeft="@dimen/_10sdp"
         android:paddingRight="@dimen/_10sdp"
         android:text="Sign In"
         android:textAlignment="center"
         android:textColor="@color/colorWhite"
         android:textSize="@dimen/_14sdp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:translationZ="@dimen/_1sdp" />
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/_8sdp"
         android:orientation="horizontal">
 
         <TextView
@@ -98,8 +121,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="SING UP"
-            android:textStyle="bold"
             android:textColor="@color/colorOrange"
-            android:textSize="@dimen/_10sdp" />
+            android:textSize="@dimen/_10sdp"
+            android:textStyle="bold" />
     </LinearLayout>
 </LinearLayout>

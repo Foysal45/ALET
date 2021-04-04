@@ -1,5 +1,18 @@
 <resources>
     <string name="app_name">ALET</string>
-    <!-- TODO: Remove or change this placeholder text -->
+
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--HINT-->
+    <string name="first_name">First Name<font color="#ff2d2d"><bold>*</bold></font></string>
+    <string name="last_name">Last Name<font color="#ff2d2d"><bold>*</bold></font></string>
+    <string name="email">Email Address<font color="#ff2d2d"><bold>*</bold></font></string>
+    <string name="phone">Phone Number<font color="#ff2d2d"><bold>*</bold></font></string>
+    <string name="password">Password<font color="#ff2d2d"><bold>*</bold></font></string>
+    <string name="new_password">New Password<font color="#ff2d2d"><bold>*</bold></font></string>
+    <string name="con_password">Confirm Password<font color="#ff2d2d"><bold>*</bold></font></string>
+    <string name="new_con_password">Confirm New Password<font color="#ff2d2d"><bold>*</bold></font></string>
+    <string name="old_password">Old Password<font color="#ff2d2d"><bold>*</bold></font></string>
+
+
 </resources>
