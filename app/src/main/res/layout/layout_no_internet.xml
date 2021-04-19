@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/rl_no_internet"
+    android:layout_height="match_parent">
+<ImageView
+    android:id="@+id/iv_no_int_img"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:src="@drawable/ic_no_internet"/>
+    <TextView
+        android:id="@+id/tv_retry"
+        android:layout_below="@id/iv_no_int_img"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:background="@drawable/shape_rec_solid_orange_30dp"
+        android:elevation="@dimen/_1sdp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="@dimen/_10sdp"
+        android:paddingRight="@dimen/_10sdp"
+        android:text="Retry"
+        android:textAlignment="center"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/_14sdp"
+        android:textStyle="bold"
+        android:translationZ="@dimen/_1sdp" />
+</RelativeLayout>

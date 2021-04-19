@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.alet.apps">
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -11,23 +12,39 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ALET">
-        <activity android:name=".c_activity.ac_auth.view.AuthCommonActivity"
-            android:theme="@style/AppTheme.AuthCommon"
-            android:screenOrientation="portrait"/>
-        <activity
-            android:name=".c_activity.ac_welcome.view.WelcomeActivity"
-            android:theme="@style/AppTheme.Welcome"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".c_activity.base_ac.view.BaseActivity" />
-        <activity
-            android:name=".c_activity.ac_splash.view.SplashActivity"
+        <activity android:name=".c_activity.ac_details.view.DetailsCommonActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/AppFullScreenTheme">
+            android:theme="@style/AppTheme.Details"
+            tools:ignore="LockedOrientationActivity"
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".c_activity.ac_dashboard.view.DashboardActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Dashboard"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".c_activity.ac_auth.view.AuthCommonActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.AuthCommon"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".c_activity.ac_welcome.view.WelcomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Welcome"
+            tools:ignore="LockedOrientationActivity" />
+        <activity android:name=".c_activity.base_ac.view.BaseActivity" />
+        <activity
+            android:name=".c_activity.ac_splash.view.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppFullScreenTheme"
+            tools:ignore="LockedOrientationActivity">
+
         </activity>
     </application>
 

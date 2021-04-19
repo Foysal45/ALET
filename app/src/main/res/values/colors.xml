@@ -12,11 +12,11 @@
     <color name="colorOrange">#FBC400</color>
     <color name="colorDarkGray">#CCCCCC</color>
     <color name="colorGray">#ececec</color>
+    <color name="colorGray78">#787878</color>
     <color name="colorWhite">#ffffff</color>
     <color name="colorBlack">#000000</color>
     <color name="colorBlue">#6c63ff</color>
     <color name="colorLowGray">#f9f9f9</color>
     <color name="colorTransparent">#01000000</color>
-
 
 </resources>

@@ -33,4 +33,20 @@
         <item name="android:windowBackground">@color/colorWhite</item>
     </style>
 
+    <style name="AppTheme.Dashboard" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorOrange</item>
+        <item name="colorPrimaryDark">@color/colorOrange</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorAccent">@color/colorOrange</item>
+        <item name="android:windowBackground">@color/colorWhite</item>
+    </style>
+
+    <style name="AppTheme.Details" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorOrange</item>
+        <item name="colorPrimaryDark">@color/colorOrange</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorAccent">@color/colorOrange</item>
+        <item name="android:windowBackground">@color/colorWhite</item>
+    </style>
+
 </resources>

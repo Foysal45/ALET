@@ -16,38 +16,55 @@ import com.alet.apps.enam.AcName
 object Utility {
 
 
-    fun replaceFramgentWithoutBackStack(acName: AcName,activity: Activity, fragment: Fragment?) {
+    fun replaceFramgentWithoutBackStack(acName: AcName, activity: Activity, fragment: Fragment) {
         val fragmentManager1 = (activity as FragmentActivity).supportFragmentManager
         val fragmentTransaction = fragmentManager1.beginTransaction()
-        when(acName){
+        when (acName) {
             AcName.AUTH -> {
-                fragmentTransaction.replace(R.id.container_auth, fragment!!)
+                fragmentTransaction.replace(R.id.container_auth, fragment)
             }
+            AcName.DETAILS -> {
+                fragmentTransaction.replace(R.id.container_details, fragment)
+            }
+            AcName.SPLASH -> TODO()
+            AcName.WELCOME -> TODO()
+            AcName.DASHBOARD -> TODO()
         }
         fragmentTransaction.commitAllowingStateLoss()
     }
 
-    fun replaceFramgentWithBackStack(acName: AcName,context: Context, fragment: Fragment) {
+    fun replaceFramgentWithBackStack(acName: AcName, context: Context, fragment: Fragment) {
         val fragmentManager = (context as FragmentActivity).supportFragmentManager
         val fragmentTransaction = fragmentManager.beginTransaction()
         fragmentTransaction.addToBackStack(fragment.javaClass.name)
-        when(acName){
+        when (acName) {
             AcName.AUTH -> {
-                fragmentTransaction.add(R.id.container_auth, fragment!!)
+                fragmentTransaction.add(R.id.container_auth, fragment)
             }
+            AcName.DETAILS -> {
+                fragmentTransaction.replace(R.id.container_details, fragment)
+            }
+            AcName.SPLASH -> TODO()
+            AcName.WELCOME -> TODO()
+            AcName.DASHBOARD -> TODO()
         }
         fragmentTransaction.commitAllowingStateLoss()
     }
 
 
-
-    fun replaceFramgentWithoutBackStack(acName: AcName, context: Context, fragment: Fragment?) {
+    fun replaceFramgentWithoutBackStack(acName: AcName, context: Context, fragment: Fragment) {
         val fragmentManager = (context as FragmentActivity).supportFragmentManager
         val fragmentTransaction = fragmentManager.beginTransaction()
-        when(acName){
+        when (acName) {
             AcName.AUTH -> {
-                fragmentTransaction.add(R.id.container_auth, fragment!!)
+                fragmentTransaction.add(R.id.container_auth, fragment)
             }
+            AcName.DETAILS -> {
+                fragmentTransaction.replace(R.id.container_details, fragment)
+            }
+            AcName.SPLASH -> TODO()
+            AcName.WELCOME -> TODO()
+            AcName.DASHBOARD -> TODO()
         }
         fragmentTransaction.commitAllowingStateLoss()
     }

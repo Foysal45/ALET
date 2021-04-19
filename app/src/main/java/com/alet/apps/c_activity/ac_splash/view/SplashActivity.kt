@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.os.Handler
 import android.view.animation.*
 import com.alet.apps.R
+import com.alet.apps.c_activity.ac_dashboard.view.DashboardActivity
 import com.alet.apps.c_activity.ac_welcome.view.WelcomeActivity
 import kotlinx.android.synthetic.main.activity_splash.*
 
@@ -24,7 +25,7 @@ class SplashActivity : AppCompatActivity() {
                 if (sharedPref!!.isLogin!!)
                     startActivity(Intent(this, HomeActivity::class.java))
                 else*/
-                    startActivity(Intent(this, WelcomeActivity::class.java))
+                    startActivity(Intent(this, DashboardActivity::class.java))
                 overridePendingTransition(R.anim.fade_in, R.anim.fade_out)
                 this.finish()
             }, 3100
