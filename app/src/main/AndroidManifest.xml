@@ -2,7 +2,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.alet.apps">
+    <!-- android 11 map dependency -->
+    <queries>
+        <package android:name="com.google.android.apps.maps" />
+    </queries>
 
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -12,11 +17,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ALET">
-        <activity android:name=".c_activity.ac_details.view.DetailsCommonActivity"
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".c_activity.ac_details.view.DetailsCommonActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.Details"
-            tools:ignore="LockedOrientationActivity"
-            >
+            tools:ignore="LockedOrientationActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -43,9 +53,7 @@
             android:name=".c_activity.ac_splash.view.SplashActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppFullScreenTheme"
-            tools:ignore="LockedOrientationActivity">
-
-        </activity>
+            tools:ignore="LockedOrientationActivity"></activity>
     </application>
 
 </manifest>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/_8sdp"
+    android:layout_marginTop="@dimen/_4sdp"
+    android:layout_marginRight="@dimen/_8sdp"
+    android:layout_marginBottom="@dimen/_4sdp"
+    android:background="@drawable/shape_rec_solid_gray_4dp">
+
+    <RelativeLayout
+        android:id="@+id/question_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_1sdp"
+        android:background="@drawable/shape_rec_solid_white_4dp"
+        android:elevation="1dp">
+
+        <TextView
+            android:id="@+id/tv_question_mark"
+            android:layout_width="@dimen/_36sdp"
+            android:layout_height="@dimen/_36sdp"
+            android:gravity="center"
+            android:text="@string/q"
+            android:textColor="@color/colorOrange"
+            android:textSize="@dimen/_18sdp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_faq_question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_toLeftOf="@id/iv_question_icon"
+            android:layout_toRightOf="@id/tv_question_mark"
+            android:lineSpacingMultiplier="1.25"
+            android:padding="@dimen/_8sdp"
+            android:textColor="@color/colorGray78"
+            android:textSize="@dimen/_12sdp"
+            android:translationZ="1dp"
+            tools:text="text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book." />
+
+        <ImageView
+            android:id="@+id/iv_question_icon"
+            android:layout_width="@dimen/_36sdp"
+            android:layout_height="@dimen/_36sdp"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/_6sdp"
+            android:rotation="-90"
+            android:src="@drawable/ic_baseline_keyboard_arrow_down_24" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tv_faq_answer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/question_lay"
+        android:layout_gravity="center_vertical"
+        android:lineSpacingMultiplier="1.25"
+        android:paddingLeft="@dimen/_8sdp"
+        android:layout_marginBottom="@dimen/_16sdp"
+        android:layout_marginRight="@dimen/_36sdp"
+        android:layout_marginLeft="@dimen/_36sdp"
+        android:paddingRight="@dimen/_8sdp"
+        android:paddingBottom="@dimen/_8sdp"
+        android:textColor="@color/colorGray78"
+        android:textSize="@dimen/_12sdp"
+        tools:text="text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book." />
+
+
+</RelativeLayout>

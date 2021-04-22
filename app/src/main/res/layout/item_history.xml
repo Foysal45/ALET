@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/_8sdp"
+    android:layout_marginTop="@dimen/_4sdp"
+    android:layout_marginRight="@dimen/_8sdp"
+    android:layout_marginBottom="@dimen/_4sdp"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tv_history_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:textColor="@color/colorGray78"
+        android:textSize="@dimen/_12sdp"
+        tools:text="text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book." />
+
+    <TextView
+        android:id="@+id/tv_history_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_history_description"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:layout_marginRight="@dimen/_8sdp"
+        android:layout_toLeftOf="@id/tv_history_time"
+        android:textColor="@color/colorGray78"
+        android:textSize="@dimen/_8sdp"
+        android:textStyle="italic"
+        tools:text="11 Feb,2021" />
+
+    <TextView
+        android:id="@+id/tv_history_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_history_description"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:textColor="@color/colorGray78"
+        android:textSize="@dimen/_8sdp"
+        android:textStyle="italic"
+        tools:text="08.09 PM" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/tv_history_date"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:background="@color/colorDarkGray" />
+
+
+</RelativeLayout>

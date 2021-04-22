@@ -27,8 +27,12 @@
 
     <string name="copyright">Copyright © <font color="#FBC400">A-LET</font></string>
 
+    <string name="q">Q.</string>
+
     <!--details page titles-->
     <string name="title_terms"><![CDATA[Terms & Conditions]]></string>
     <string name="title_history">History</string>
+    <string name="title_faq">Frequently Asked Question</string>
+    <string name="title_activity_maps">Map</string>
 
 </resources>
