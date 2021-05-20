@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="@dimen/_4sdp"
+
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="@dimen/_22sdp"
+        android:layout_height="@dimen/_22sdp"
+        android:padding="@dimen/_5sdp"
+        android:src="@drawable/ic_location_3" />
+    <TextView
+        android:layout_toRightOf="@id/iv_icon"
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/_4sdp"
+        android:paddingTop="@dimen/_4sdp"
+        android:paddingRight="@dimen/_4sdp"
+        android:paddingBottom="@dimen/_2sdp"
+        android:text="Vacancies"
+        android:textColor="@color/colorBlack22"
+        android:textSize="@dimen/_11sdp" />
+    <TextView
+        android:id="@+id/tv_sub_title"
+        android:layout_toRightOf="@id/iv_icon"
+        android:layout_below="@id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_4sdp"
+        android:layout_marginRight="@dimen/_4sdp"
+        android:layout_marginBottom="@dimen/_4sdp"
+        android:text="2"
+        android:layout_centerVertical="true"
+        android:textColor="@color/colorDarkGray"
+        android:textSize="@dimen/_9sdp" />
+</RelativeLayout>

@@ -13,10 +13,14 @@
     <color name="colorDarkGray">#CCCCCC</color>
     <color name="colorGray">#ececec</color>
     <color name="colorGray78">#787878</color>
+    <color name="colorGrayB5">#B5B5B5</color>
     <color name="colorWhite">#ffffff</color>
     <color name="colorBlack">#000000</color>
+    <color name="colorBlack22">#222222</color>
+    <color name="colorBlack3E">#3E3E3E</color>
     <color name="colorBlue">#6c63ff</color>
     <color name="colorLowGray">#f9f9f9</color>
     <color name="colorTransparent">#01000000</color>
+    <color name="colorGreen2a">#2AC58B</color>
 
 </resources>

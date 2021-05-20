@@ -110,6 +110,12 @@ dependencies {
     //youtube
     implementation 'com.pierfrancescosoffritti.androidyoutubeplayer:core:10.0.5'
 
+    // recycling items
+    implementation 'com.github.rubensousa:gravitysnaphelper-compat:2.0'
+    // fav
+    implementation 'com.github.varunest:sparkbutton:1.0.6'
+    // yoyo animation
+    implementation 'com.daimajia.androidanimations:library:2.4@aar'
 }
 repositories {
     mavenCentral()

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/property_lay"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/_4sdp"
+    android:layout_marginTop="@dimen/_8sdp"
+    android:layout_marginRight="@dimen/_4sdp"
+    android:layout_marginBottom="@dimen/_8sdp"
+    android:background="@drawable/shape_rec_solid_white_4dp"
+    android:elevation="@dimen/_1sdp"
+    android:translationZ="@dimen/_1sdp">
+
+    <ImageView
+        android:id="@+id/photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_4sdp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/flat_img" />
+
+    <com.varunest.sparkbutton.SparkButton
+        android:id="@+id/spark_button"
+        android:layout_above="@id/title"
+        android:layout_alignParentRight="true"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        app:sparkbutton_activeImage="@drawable/ic_baseline_favorite_24"
+        app:sparkbutton_inActiveImage="@drawable/ic_baseline_favorite_border_24"
+        app:sparkbutton_iconSize="@dimen/_12sdp"
+        app:sparkbutton_primaryColor="@color/colorOrange"
+        app:sparkbutton_secondaryColor="@color/colorGreen2a" />
+
+
+
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/photo"
+        android:layout_marginLeft="@dimen/_4sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:layout_marginRight="@dimen/_4sdp"
+        android:ellipsize="end"
+        android:lines="1"
+        android:maxLines="1"
+        android:text="Flat at Kafrul"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/_12sdp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_margin="@dimen/_4sdp"
+        android:drawableLeft="@drawable/ic_location_2"
+        android:drawablePadding="@dimen/_4sdp"
+        android:text="2 Ansar Camp, Mirpur"
+        android:textColor="@color/colorGrayB5"
+        android:textSize="@dimen/_11sdp" />
+
+    <TextView
+        android:id="@+id/cost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/location"
+        android:layout_marginLeft="@dimen/_4sdp"
+        android:layout_marginRight="@dimen/_4sdp"
+        android:drawableLeft="@drawable/ic_taka_large"
+        android:drawablePadding="@dimen/_6sdp"
+        android:text="6,500,000 BDT"
+        android:textColor="@color/colorBlack3E"
+        android:textSize="@dimen/_12sdp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cost"
+        android:layout_marginLeft="@dimen/_4sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginRight="@dimen/_4sdp"
+        android:layout_marginBottom="@dimen/_8sdp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="4 Rooms"
+            android:textColor="@color/colorGrayB5"
+            android:textSize="@dimen/_8sdp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="4 Bedrooms"
+            android:textColor="@color/colorGrayB5"
+            android:textSize="@dimen/_8sdp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="end"
+            android:maxLines="1"
+            android:text="4 Bathrooms"
+            android:textColor="@color/colorGrayB5"
+            android:textSize="@dimen/_8sdp" />
+    </LinearLayout>
+</RelativeLayout>

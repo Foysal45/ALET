@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:overScrollMode="never"
+    android:scrollbars="none"
+    tools:context=".c_activity.ac_details.fragment.fg_job_details.view.JobDetailsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/_8sdp"
+        android:background="@drawable/shape_rec_solid_low_gray_4dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_rec_solid_white_4dp"
+            android:layout_margin="@dimen/_1sdp"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"
+                android:padding="@dimen/_4sdp"
+                android:src="@drawable/job" />
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_8sdp"
+                android:paddingTop="@dimen/_8sdp"
+                android:paddingRight="@dimen/_8sdp"
+                android:paddingBottom="@dimen/_2sdp"
+                android:text="Executive- Graphic Designer / Visualizer"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_14sdp" />
+
+            <RelativeLayout
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    android:layout_marginRight="@dimen/_8sdp"
+                    android:layout_marginBottom="@dimen/_4sdp"
+                    android:text="Nakshikatha"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/spark_button"
+                    android:textColor="@color/colorDarkGray"
+                    android:textSize="@dimen/_12sdp" />
+
+                <com.varunest.sparkbutton.SparkButton
+                    android:id="@+id/spark_button"
+                    android:layout_width="@dimen/_24sdp"
+                    android:layout_height="@dimen/_24sdp"
+                    android:layout_marginRight="@dimen/_8sdp"
+                    android:layout_toLeftOf="@id/share"
+                    app:sparkbutton_activeImage="@drawable/ic_baseline_favorite_24"
+                    app:sparkbutton_iconSize="@dimen/_18sdp"
+                    app:sparkbutton_inActiveImage="@drawable/ic_baseline_favorite_border_24"
+                    app:sparkbutton_primaryColor="@color/colorOrange"
+                    app:sparkbutton_secondaryColor="@color/colorGreen2a" />
+
+                <ImageView
+                    android:layout_marginRight="@dimen/_8sdp"
+                    android:id="@+id/share"
+                    android:layout_width="@dimen/_24sdp"
+                    android:layout_height="@dimen/_24sdp"
+                    android:layout_alignParentRight="true"
+                    android:padding="@dimen/_4sdp"
+                    android:src="@drawable/ic_baseline_share_24" />
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rec_job_key"
+                android:paddingTop="@dimen/_4sdp"
+                android:paddingBottom="@dimen/_4sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/topic_lay"
+                android:background="@color/colorLowGray"
+                android:overScrollMode="never"
+                android:scrollbars="none" />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rec_parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/topic_lay"
+                android:overScrollMode="never"
+                android:scrollbars="none" />
+            <TextView
+                android:layout_marginTop="@dimen/_16sdp"
+                android:id="@+id/tv_apply"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_36sdp"
+                android:paddingRight="@dimen/_16sdp"
+                android:paddingLeft="@dimen/_16sdp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/shape_rec_solid_white_4dp_orange_strock"
+                android:gravity="center"
+                android:text="Apply Now"
+                android:textAllCaps="false"
+                android:textColor="@color/colorBlack22"
+                android:textSize="@dimen/_12sdp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:layout_marginRight="@dimen/_8sdp"
+                android:layout_marginBottom="@dimen/_16sdp"
+                android:text="See similar properties"
+                android:textColor="@color/colorGreen2a"
+                android:textSize="@dimen/_12sdp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rec_jobs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_1sdp"
+                android:background="@drawable/shape_rec_solid_white_4dp"
+                android:overScrollMode="never"
+                android:scrollbars="none" />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

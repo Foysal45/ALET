@@ -2,6 +2,7 @@ package com.alet.apps.util
 
 import android.app.Activity
 import android.content.Context
+import android.util.DisplayMetrics
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
 import com.alet.apps.R

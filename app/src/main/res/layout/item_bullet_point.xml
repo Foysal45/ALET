@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:padding="@dimen/_4sdp"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_bullet_point"
+        android:layout_width="@dimen/_16sdp"
+        android:src="@drawable/shape_rec_dice"
+        android:layout_height="@dimen/_16sdp"/>
+    <TextView
+        android:id="@+id/tv_bullet_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="@dimen/_2sdp"
+        android:layout_marginLeft="@dimen/_4sdp"
+        android:text="Nakshikatha is specialized in Branding, Airport service and 360 degree promotional activities. Also operating several world-class Lounges at the Airports of Bangladesh and a five-star category kitchen at HSIA."
+        android:textColor="@color/colorBlack3E"
+        android:textSize="@dimen/_9sdp" />
+</LinearLayout>

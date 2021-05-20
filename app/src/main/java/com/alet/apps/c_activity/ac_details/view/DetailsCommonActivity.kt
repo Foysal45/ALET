@@ -6,6 +6,7 @@ import com.alet.apps.R
 import com.alet.apps.c_activity.ac_auth.fragment.fg_change_pass.view.ChangePassFragment
 import com.alet.apps.c_activity.ac_details.fragment.fg_faq.view.FaqFragment
 import com.alet.apps.c_activity.ac_details.fragment.fg_history.view.HistoryFragment
+import com.alet.apps.c_activity.ac_details.fragment.fg_job_details.view.JobDetailsFragment
 import com.alet.apps.c_activity.ac_details.fragment.fg_property_details.view.PropertyDetailsFragment
 import com.alet.apps.c_activity.ac_details.fragment.fg_terms.view.TermsFragment
 import com.alet.apps.enam.AcName
@@ -16,7 +17,7 @@ class DetailsCommonActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_details_common)
-        page_title.text = "Property Details"
-        Utility.replaceFramgentWithoutBackStack(AcName.DETAILS,this, PropertyDetailsFragment.newInstance(1))
+        page_title.text = "Job Details"
+        Utility.replaceFramgentWithoutBackStack(AcName.DETAILS,this, JobDetailsFragment.newInstance(1))
     }
 }
