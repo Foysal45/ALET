@@ -42,7 +42,9 @@
             android:name=".c_activity.ac_auth.view.AuthCommonActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.AuthCommon"
-            tools:ignore="LockedOrientationActivity" />
+            tools:ignore="LockedOrientationActivity" >
+
+        </activity>
         <activity
             android:name=".c_activity.ac_welcome.view.WelcomeActivity"
             android:screenOrientation="portrait"
@@ -53,7 +55,9 @@
             android:name=".c_activity.ac_splash.view.SplashActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppFullScreenTheme"
-            tools:ignore="LockedOrientationActivity"></activity>
+            tools:ignore="LockedOrientationActivity">
+
+        </activity>
     </application>
 
 </manifest>

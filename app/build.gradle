@@ -1,9 +1,11 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
+    id 'kotlin-kapt'
     id 'kotlin-android-extensions'
     id 'com.google.firebase.crashlytics'
     id 'com.google.gms.google-services'
+    id 'dagger.hilt.android.plugin'
 }
 
 android {
@@ -116,6 +118,11 @@ dependencies {
     implementation 'com.github.varunest:sparkbutton:1.0.6'
     // yoyo animation
     implementation 'com.daimajia.androidanimations:library:2.4@aar'
+
+
+    //dependency injection
+    implementation "com.google.dagger:hilt-android:$hilt_version"
+    kapt "com.google.dagger:hilt-android-compiler:$hilt_version"
 }
 repositories {
     mavenCentral()
